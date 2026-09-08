@@ -8,6 +8,8 @@
     "de": "Satz",
     "fr": "Théorème",
     "es": "Teorema",
+    "it": "Teorema", //bm
+  
   ),
   "proposition": (
     "en": "Proposition",
@@ -16,6 +18,7 @@
     "de": "Proposition",
     "fr": "Proposition",
     "es": "Proposición",
+    "it": "Proposizione", //bm
   ),
   "lemma": (
     "en": "Lemma",
@@ -24,6 +27,7 @@
     "de": "Lemma",
     "fr": "Lemme",
     "es": "Lema",
+    "it": "Lemma", //bm
   ),
   "corollary": (
     "en": "Corollary",
@@ -32,6 +36,8 @@
     "de": "Korollar",
     "fr": "Corollaire",
     "es": "Corolario",
+    "it": "Corollario", //bm
+
   ),
   "definition": (
     "en": "Definition",
@@ -40,6 +46,7 @@
     "de": "Definition",
     "fr": "Définition",
     "es": "Definición",
+    "it": "Definizione", //bm
   ),
   "example": (
     "en": "Example",
@@ -84,6 +91,7 @@
     "de": "Algorithmus",
     "fr": "Algorithme",
     "es": "Algoritmo",
+    "it": "algoritmo", //bm
   ),
   "claim": (
     "en": "Claim", 
@@ -92,6 +100,7 @@
     "de": "Behauptung",
     "fr": "Assertion",
     "es": "Afirmación",
+    "it": "Affermazione", //bm
   ),
   "axiom": (
     "en": "Axiom", 
@@ -100,6 +109,7 @@
     "de": "Axiom",
     "fr": "Axiome",
     "es": "Axioma",
+    "it": "Assioma", //bm
   ),
   "proof": (
     "en": "Proof", 
@@ -108,6 +118,7 @@
     "de": "Beweis", 
     "fr": "Démonstration", 
     "es": "Demostración",
+    "it": "Dimostrazione", //bm
   ),
   "proof-of": (
     "en": "Proof of", 
@@ -116,6 +127,7 @@
     "de": "Beweis von", 
     "fr": "Démonstration du", 
     "es": "Demostración del",
+    "it": "Dimostrazione del", //bm
   ),
   "notation": (
     "en": "Notation",
@@ -124,6 +136,7 @@
     "de": "Notation",
     "fr": "Notation",
     "es": "Notación",
+    "it": "Notazione", //bm
   ),
   "problem": (
     "en": "Problem",
@@ -132,6 +145,7 @@
     "de": "Problem",
     "fr": "Problème",
     "es": "Problema",
+    "it": "Problema", //bm
   ),
   "vocabulary": (
     "en": "Vocabulary",
@@ -140,6 +154,7 @@
     "de": "Wortschatz",
     "fr": "Vocabulaire",
     "es": "Vocabulario",
+    "it": "Vocabolario", //bm
   ),
 )
 

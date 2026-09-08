@@ -2,6 +2,24 @@
 #import("my-index.typ"): *
 #import("theorems.typ"): *
 
+//bm Adaptations by Maurilio Bortolussi
+#let border-color() = orange
+#let fill-color() = rgb("fff2e6")
+#let c(testo1) = text( style: "italic", testo1)
+#let g(testo1) = text( weight: "bold", testo1)
+#let i(testo2) = text(fill: orange.darken(0%), style: "italic", weight: "bold", testo2)
+#let claim(corpo) = block(
+  fill: fill-color(),     // Sfondo arancione chiaro
+  stroke: 1.5pt + border-color(), // Bordo arancione
+  inset: 12pt,            // Spazio interno
+  radius: 4pt,            // Angoli arrotondati
+  width: 100%,            // Larghezza intera pagina
+  corpo
+)
+
+//bm end of adaptations
+
+
 #let scr(it) = text(
   features: ("ss01",),
   box($cal(it)$),
@@ -430,11 +448,11 @@
         context{
           let img = heading-image.at(here())
           if img != none {
-            set image(width: 21cm, height: 9.4cm)
+            set image(width: 21cm, height: 6cm) //bm set image(width: 21cm, height: 9.4cm)
             place(move(dx: -3cm, dy: -3cm, img))
             place(
               move(dx: -3cm, dy: -3cm, 
-                block(width: 21cm, height: 9.4cm, 
+                block(width: 21cm, height: 6cm, //bm block(width: 21cm, height: 9.4cm, 
                   align(right + bottom, 
                     pad(bottom: 1.2cm, 
                       block(width: 86%,
@@ -451,7 +469,7 @@
                 )
               )
             )
-            v(8.4cm)
+            v(4cm)//bm v(8.4cm)
           } else {
             layout(size => {
             let full_width = size.width
@@ -637,7 +655,27 @@
   //set block(spacing: 1.2em)
   show link: set text(fill: main-color)
 
+  //bm start
+  set figure.caption(separator: [. ])
+  show figure.caption: set par(justify: true)
+  show figure.caption: set align(left)
+  show figure.caption: set text(size: 9pt)
+  show figure.caption: c => {
+    if c.numbering != none {
+      // Se c'è un sistema di numerazione attivo, applica il grassetto a "Tabella X"
+      strong([#c.supplement #context c.counter.display(c.numbering)]) + c.separator + c.body
+    } else {
+      // Se la figura non è numerata, mostra solo il testo normale della didascalia
+      c.body
+    }
+  }
+
+  //bm end
+
   body
 
 }
+
+
+
 
